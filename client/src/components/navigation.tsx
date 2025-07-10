@@ -38,6 +38,7 @@ export default function Navigation() {
               { id: "services", label: "Services" },
               { id: "education", label: "Education" },
               { id: "projects", label: "Projects" },
+              { id: "project-showcase", label: "Project Files" },
               { id: "skills", label: "Skills" },
               { id: "portfolio", label: "Portfolio" },
             ].map((item) => (
@@ -70,6 +71,7 @@ export default function Navigation() {
                 { id: "services", label: "Services" },
                 { id: "education", label: "Education" },
                 { id: "projects", label: "Projects" },
+                { id: "project-showcase", label: "Project Files" },
                 { id: "skills", label: "Skills" },
                 { id: "portfolio", label: "Portfolio" },
               ].map((item) => (

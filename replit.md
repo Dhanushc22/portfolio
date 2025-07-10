@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a full-stack web application built as a personal portfolio website for Dhanush C, a software engineer specializing in mobile development, AI/ML, and full-stack web development. The application showcases a modern, responsive portfolio with smooth animations and a professional design.
+This is a full-stack web application built as a personal portfolio website for Dhanush C, a software engineer specializing in mobile development, AI/ML, and full-stack web development. The application showcases a modern, responsive portfolio with smooth animations and a professional design. The portfolio now includes comprehensive project documentation, source code examples, and detailed project file structures for all major projects including HealthWhisper, BinaryBox, and NeuroSynk.
 
 ## User Preferences
 
@@ -41,6 +41,7 @@ Preferred communication style: Simple, everyday language.
 - **Services Section**: Technical skills and service offerings
 - **Education Section**: Academic background and achievements
 - **Projects Section**: Showcase of major projects with links
+- **Project Showcase**: Comprehensive project files and documentation viewer
 - **Skills Section**: Animated progress bars for technical skills
 - **Portfolio Section**: Filterable project gallery
 - **Footer**: Contact links and social media

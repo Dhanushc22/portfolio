@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Configuration for BinaryBox -->
+    
+    <!-- App Information -->
+    <string name="app_name">BinaryBox</string>
+    <string name="app_version">1.0.0</string>
+    <string name="app_description">Offline File-to-Binary Converter</string>
+    
+    <!-- Buffer Sizes -->
+    <integer name="buffer_size">8192</integer>
+    <integer name="max_file_size_mb">100</integer>
+    
+    <!-- Theme Configuration -->
+    <string-array name="available_themes">
+        <item>Dark Blue</item>
+        <item>Dark Green</item>
+        <item>Dark Purple</item>
+        <item>Light Blue</item>
+        <item>Light Green</item>
+        <item>Classic Dark</item>
+    </string-array>
+    
+    <!-- File Extensions -->
+    <string-array name="supported_extensions">
+        <item>txt</item>
+        <item>pdf</item>
+        <item>doc</item>
+        <item>docx</item>
+        <item>jpg</item>
+        <item>jpeg</item>
+        <item>png</item>
+        <item>gif</item>
+        <item>mp3</item>
+        <item>mp4</item>
+        <item>zip</item>
+        <item>rar</item>
+    </string-array>
+    
+    <!-- Privacy Settings -->
+    <bool name="auto_delete_temp_files">true</bool>
+    <bool name="secure_memory_cleanup">true</bool>
+    <bool name="offline_only_mode">true</bool>
+    
+    <!-- Performance Settings -->
+    <bool name="enable_progress_tracking">true</bool>
+    <bool name="enable_integrity_check">true</bool>
+    <bool name="enable_compression">false</bool>
+    
+    <!-- UI Configuration -->
+    <integer name="animation_duration">300</integer>
+    <bool name="show_conversion_stats">true</bool>
+    <bool name="enable_haptic_feedback">true</bool>
+    
+    <!-- Error Messages -->
+    <string name="error_file_too_large">File size exceeds maximum limit of %d MB</string>
+    <string name="error_invalid_binary">Invalid binary string format</string>
+    <string name="error_storage_permission">Storage permission required</string>
+    <string name="error_file_not_found">File not found</string>
+    <string name="error_conversion_failed">Conversion failed. Please try again.</string>
+    
+    <!-- Success Messages -->
+    <string name="success_file_converted">File successfully converted to binary</string>
+    <string name="success_binary_converted">Binary successfully converted to file</string>
+    <string name="success_file_saved">File saved successfully</string>
+    
+    <!-- About Information -->
+    <string name="developer_name">Dhanush C</string>
+    <string name="developer_email">dhanushc092@gmail.com</string>
+    <string name="github_repo">https://github.com/Dhanushc22/BinaryBox</string>
+    <string name="app_license">MIT License</string>
+</resources>
