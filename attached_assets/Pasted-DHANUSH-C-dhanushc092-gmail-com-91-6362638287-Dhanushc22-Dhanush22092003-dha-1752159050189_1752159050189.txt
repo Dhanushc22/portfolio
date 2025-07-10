@@ -1,0 +1,60 @@
+DHANUSH C   
+dhanushc092@gmail.com| (+91)6362638287  
+  	  Dhanushc22     	  Dhanush22092003  	  dhanush-c-b41015343  
+   
+OBJECTIVE   
+Aspiring software engineer with hands-on experience in full-stack web and mobile development, including building high-performance apps using Flutter. Skilled in crafting responsive UIs, developing scalable APIs, and delivering user-centric solutions. Eager to contribute to innovative teams where I can merge creativity with clean, maintainable code to solve real-world problems and create seamless digital experiences.   
+SKILLS   
+•	Programming Languages: C , Java , Python 
+•	Mobile Development: Flutter, Android SDK   
+•	AI/ML Frameworks: TensorFlow, Scikitlearn, OpenCV   
+•	Web Tech: HTML, CSS, JavaScript   
+•	Tools & Platforms: Firebase,  VS Code  •  Version Control: Git, GitHub   
+•	Soft Skills: Innovation, Analytical Thinking, Collaboration, Problem solving   
+ 
+EDUCATION   
+• 	MCA | Nitte Meenakshi Institute of Technology      	CGPA: 7.6|2024-26(Ongoing)   • 	BCA  |Sir MV Science College-Shivamogga  	    	   	CGPA: 7.8|July 2024   
+  
+PROJECTS   
+HealthWhisper – AI-Powered Medical Assistant  
+Android Studio, Java, XML, OpenAI GPT, Google Vision API, Whisper, Firebase / AWS  
+Developed a smart mobile healthcare assistant that helps users understand complex medical data through AI-driven features:  
+•	X-ray Scanner – Allows users to scan/upload X-rays, with AI providing simplified interpretations.  
+•	Voice Symptom Consultation – Enables voice input for symptoms and returns helpful suggestions using NLP.  
+•	Blood Report Decoder – Parses lab reports and explains terms, highlighting abnormal values.  
+•	Tablet Analyzer – Identifies medicines via OCR and explains usage, dosage, and precautions.  
+•	Built with a clean, patient-friendly UI to ensure usability across all age and tech literacy levels.  
+•	Integrated AI APIs, OCR (Google Vision), and speech recognition (Whisper/Google SpeechtoText) for real-time interaction.  
+GitHub: github.com/Dhanushc22/HealthWhisper-   
+  
+  
+  
+BinaryBox – Offline File-to-Binary Converter  
+Android Studio, Java, XML  
+A privacy-focused Android app that securely converts any file into a binary string and restores it— all entirely offline:  
+  
+•	Two-Way Conversion: o File → Binary – Converts files into binary strings for secure storage.  
+ 	o  Binary → File – Restores original files from binary input.  
+•	Offline Processing: All operations are handled locally on-device, ensuring no data is transmitted over the internet.  
+•	Privacy-Centric Design: Ideal for users handling sensitive files or working in secure environments.  
+•	Theme Customization: Users can personalize the UI with multiple color themes.  
+•	Lightweight & Optimized: Runs efficiently even on low-end Android devices.  
+Key Tech: Java, XML, Android SDK, full client-side architecture.  
+GitHub: github.com/Dhanushc22/BinaryBox  
+  
+  
+NeuroSynk – Smartwatch-Powered Heart Health Monitoring App  
+Flutter, Dart, BLE (flutter_blue_plus), Node.js, MongoDB, Hive, fl_chart  
+Developed a cross-platform health monitoring app that connects with BLE-enabled smartwatches to provide real-time cardiovascular insights and heart attack detection.  
+•	ECG-like PPG Analysis: Reconstructed QRS-like waveforms from raw PPG signals; calculated HRV, QRS, PR, and QTc intervals.  
+•	Real-Time Monitoring: Live tracking of heart rate, blood pressure, and SpO₂ with automated 3minute health monitoring cycles.  
+•	Heart Attack Alerts: Triggered emergency warnings based on biometric thresholds (e.g., HR > 130, BP > 140, HRV drops, arrhythmias).  
+•	BLE Integration: Robust pairing with BLE smartwatches using standard and custom UUIDs, with reconnect logic and live sync via Socket.IO.  
+•	Data Visualization & Export: Displayed live and historical graphs using fl_chart, stored data in Hive, with export to CSV/JSON.  
+•	Secure Backend: Node.js/Express API with JWT auth, MongoDB for session storage, and WebSocket support for real-time sync.  
+Key Tech: Flutter, Dart, BLE (flutter_blue_plus), fl_chart, Hive, Node.js, Express, MongoDB, Socket.IO, SharedPreferences, Provider  
+GitHub: github.com/Dhanushc22/NeuroSynk  
+  
+  
+  
+   
