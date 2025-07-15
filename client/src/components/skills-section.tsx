@@ -41,29 +41,27 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section id="skills" ref={skillsRef} className="py-16 bg-[var(--portfolio-light)]">
+    <section id="skills" ref={skillsRef} className="py-20 bg-[var(--portfolio-light)]">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 fade-in">My Skills</h2>
-          <p className="text-gray-400 text-lg fade-in">Technical expertise and proficiency levels</p>
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-bold mb-6 fade-in">My Skills</h2>
+          <p className="text-xl text-gray-400 fade-in">Technical expertise and proficiency levels</p>
         </div>
 
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             {skills.map((skill, index) => (
-              <div key={index} className="space-y-6">
-                <div className="fade-in">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="font-semibold">{skill.name}</span>
-                    <span className="text-[var(--portfolio-primary)]">{skill.level}%</span>
-                  </div>
-                  <div className="skill-bar bg-gray-600/30 rounded-full h-3">
-                    <div
-                      className="skill-fill bg-gradient-to-r from-[var(--portfolio-primary)] to-orange-400 h-3 rounded-full"
-                      data-width={`${skill.level}%`}
-                      style={{ width: "0%" }}
-                    />
-                  </div>
+              <div key={index} className="bg-[var(--portfolio-dark)] p-6 rounded-2xl fade-in">
+                <div className="flex justify-between items-center mb-4">
+                  <span className="font-semibold text-lg">{skill.name}</span>
+                  <span className="text-[var(--portfolio-primary)] font-bold">{skill.level}%</span>
+                </div>
+                <div className="skill-bar bg-gray-600/30 rounded-full h-4">
+                  <div
+                    className="skill-fill bg-gradient-to-r from-[var(--portfolio-primary)] to-[var(--portfolio-secondary)] h-4 rounded-full shadow-lg"
+                    data-width={`${skill.level}%`}
+                    style={{ width: "0%" }}
+                  />
                 </div>
               </div>
             ))}

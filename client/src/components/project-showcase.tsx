@@ -113,23 +113,23 @@ export default function ProjectShowcase() {
   return (
     <section id="project-showcase" ref={showcaseRef} className="py-16 bg-[var(--portfolio-light)]">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 fade-in">Project Files & Documentation</h2>
-          <p className="text-gray-400 text-lg fade-in">
-            Comprehensive project structure and source code
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-bold mb-6 fade-in">Project Files</h2>
+          <p className="text-xl text-gray-400 fade-in">
+            Explore the complete project structure and source code
           </p>
         </div>
 
         {/* Project Selection Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12 fade-in">
+        <div className="flex flex-wrap justify-center gap-4 mb-16 fade-in">
           {Object.keys(projects).map((projectKey) => (
             <button
               key={projectKey}
               onClick={() => setSelectedProject(projectKey)}
-              className={`px-6 py-3 rounded-lg transition-all ${
+              className={`px-8 py-4 rounded-xl transition-all duration-300 ${
                 selectedProject === projectKey
-                  ? "bg-[var(--portfolio-primary)] text-white"
-                  : "bg-[var(--portfolio-dark)] text-gray-400 hover:text-white"
+                  ? "bg-gradient-to-r from-[var(--portfolio-primary)] to-[var(--portfolio-secondary)] text-white shadow-lg"
+                  : "bg-[var(--portfolio-dark)] text-gray-400 hover:text-white hover:bg-[var(--portfolio-dark)]/80"
               }`}
             >
               {projects[projectKey as keyof typeof projects].title}
@@ -141,25 +141,28 @@ export default function ProjectShowcase() {
         <div className="grid lg:grid-cols-2 gap-12 mb-12">
           {/* Project Overview */}
           <div className="fade-in">
-            <div className="bg-[var(--portfolio-dark)] p-8 rounded-xl">
-              <h3 className="text-2xl font-bold mb-2">{currentProject.title}</h3>
-              <p className="text-[var(--portfolio-primary)] mb-4">{currentProject.subtitle}</p>
-              <p className="text-gray-400 mb-6">{currentProject.description}</p>
+            <div className="bg-[var(--portfolio-dark)] p-8 rounded-2xl">
+              <h3 className="text-3xl font-bold mb-2">{currentProject.title}</h3>
+              <p className="text-[var(--portfolio-primary)] text-lg mb-4">{currentProject.subtitle}</p>
+              <p className="text-gray-400 mb-8 leading-relaxed">{currentProject.description}</p>
               
-              <div className="mb-6">
-                <h4 className="text-lg font-semibold mb-3">Key Features</h4>
-                <ul className="space-y-2">
+              <div className="mb-8">
+                <h4 className="text-xl font-semibold mb-4">Key Features</h4>
+                <ul className="space-y-3">
                   {currentProject.features.map((feature, index) => (
-                    <li key={index} className="text-gray-400 text-sm">{feature}</li>
+                    <li key={index} className="text-gray-400 flex items-start gap-2">
+                      <span className="text-[var(--portfolio-primary)] mt-1">•</span>
+                      <span>{feature}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-3">
                 {currentProject.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="bg-[var(--portfolio-primary)]/20 text-[var(--portfolio-primary)] px-3 py-1 rounded-full text-sm"
+                    className="bg-gradient-to-r from-[var(--portfolio-primary)]/20 to-[var(--portfolio-secondary)]/20 text-[var(--portfolio-primary)] px-4 py-2 rounded-full text-sm font-medium"
                   >
                     {tech}
                   </span>

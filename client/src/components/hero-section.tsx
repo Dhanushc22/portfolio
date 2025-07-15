@@ -34,38 +34,32 @@ export default function HeroSection() {
     <section
       id="home"
       ref={heroRef}
-      className="pt-20 pb-16 bg-gradient-to-br from-[var(--portfolio-dark)] via-[var(--portfolio-darker)] to-[var(--portfolio-dark)]"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[var(--portfolio-dark)] via-[var(--portfolio-darker)] to-[var(--portfolio-dark)]"
     >
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="lg:w-1/2 text-center lg:text-left">
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6 fade-in">
-              Hello, I'm <span className="gradient-text">Dhanush C</span>
-            </h1>
-            <p className="text-xl text-gray-400 mb-8 fade-in">
-              Aspiring software engineer with hands-on experience in full-stack web and mobile development, including building high-performance apps using Flutter. Skilled in crafting responsive UIs, developing scalable APIs, and delivering user-centric solutions.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start fade-in">
-              <button
-                onClick={() => scrollToSection("projects")}
-                className="bg-[var(--portfolio-primary)] hover:bg-[var(--portfolio-primary)]/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
-              >
-                View My Work
-              </button>
-              <a
-                href="mailto:dhanushc092@gmail.com"
-                className="border border-[var(--portfolio-primary)] text-[var(--portfolio-primary)] hover:bg-[var(--portfolio-primary)] hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors"
-              >
-                Contact Me
-              </a>
-            </div>
-          </div>
-          <div className="lg:w-1/2">
-            <img
-              src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-              alt="Professional developer workspace"
-              className="rounded-2xl shadow-2xl w-full h-auto fade-in"
-            />
+      <div className="container mx-auto px-6 text-center">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-6xl lg:text-8xl font-bold mb-6 fade-in">
+            <span className="gradient-text">Dhanush C</span>
+          </h1>
+          <p className="text-xl lg:text-2xl text-gray-400 mb-4 fade-in">
+            Software Engineer & Mobile Developer
+          </p>
+          <p className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto fade-in">
+            Building innovative mobile apps and AI-powered solutions with Flutter, Java, and cutting-edge technologies
+          </p>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center fade-in">
+            <button
+              onClick={() => scrollToSection("projects")}
+              className="bg-gradient-to-r from-[var(--portfolio-primary)] to-[var(--portfolio-secondary)] text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            >
+              View My Work
+            </button>
+            <a
+              href="mailto:dhanushc092@gmail.com"
+              className="border-2 border-[var(--portfolio-primary)] text-[var(--portfolio-primary)] hover:bg-[var(--portfolio-primary)] hover:text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300"
+            >
+              Get In Touch
+            </a>
           </div>
         </div>
       </div>

@@ -25,11 +25,12 @@
   --radius: 0.5rem;
   
   /* Custom portfolio theme colors */
-  --portfolio-primary: hsl(20, 100%, 60%);
-  --portfolio-dark: hsl(0, 0%, 10%);
-  --portfolio-darker: hsl(0, 0%, 8%);
-  --portfolio-light: hsl(0, 0%, 16%);
-  --portfolio-gray: hsl(0, 0%, 40%);
+  --portfolio-primary: hsl(220, 100%, 60%);
+  --portfolio-secondary: hsl(280, 100%, 70%);
+  --portfolio-dark: hsl(220, 20%, 12%);
+  --portfolio-darker: hsl(220, 25%, 8%);
+  --portfolio-light: hsl(220, 15%, 18%);
+  --portfolio-gray: hsl(220, 10%, 50%);
 }
 
 .dark {
@@ -74,7 +75,7 @@
 
 @layer components {
   .gradient-text {
-    background: linear-gradient(135deg, var(--portfolio-primary) 0%, hsl(33, 100%, 55%) 100%);
+    background: linear-gradient(135deg, var(--portfolio-primary) 0%, var(--portfolio-secondary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -94,8 +95,8 @@
   }
   
   .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px hsla(20, 100%, 60%, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px hsla(220, 100%, 60%, 0.15);
   }
   
   .service-card {
@@ -119,7 +120,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(135deg, var(--portfolio-primary) 0%, hsl(33, 100%, 55%) 100%);
+    background: linear-gradient(135deg, var(--portfolio-primary) 0%, var(--portfolio-secondary) 100%);
     transition: width 0.3s ease;
   }
   
@@ -174,7 +175,7 @@
   }
   
   .filter-btn.active {
-    background: linear-gradient(135deg, var(--portfolio-primary) 0%, hsl(33, 100%, 55%) 100%);
+    background: linear-gradient(135deg, var(--portfolio-primary) 0%, var(--portfolio-secondary) 100%);
     color: white;
   }
   

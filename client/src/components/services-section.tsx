@@ -48,11 +48,11 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section id="services" ref={servicesRef} className="py-16 bg-[var(--portfolio-dark)]">
+    <section id="services" ref={servicesRef} className="py-20 bg-[var(--portfolio-dark)]">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 fade-in">What I'm Doing</h2>
-          <p className="text-gray-400 text-lg fade-in">
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-bold mb-6 fade-in">What I Do</h2>
+          <p className="text-xl text-gray-400 fade-in">
             Specialized in cutting-edge technologies and innovative solutions
           </p>
         </div>
@@ -61,11 +61,13 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="service-card bg-[var(--portfolio-light)] p-8 rounded-xl text-center fade-in"
+              className="service-card bg-[var(--portfolio-light)] p-8 rounded-2xl text-center fade-in hover:bg-[var(--portfolio-light)]/80 transition-all duration-300"
             >
-              <service.icon className="text-[var(--portfolio-primary)] text-4xl mb-4 mx-auto" size={48} />
+              <div className="bg-gradient-to-r from-[var(--portfolio-primary)] to-[var(--portfolio-secondary)] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <service.icon className="text-white" size={28} />
+              </div>
               <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
-              <p className="text-gray-400">{service.description}</p>
+              <p className="text-gray-400 text-sm leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>

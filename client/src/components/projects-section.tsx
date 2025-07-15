@@ -54,9 +54,9 @@ export default function ProjectsSection() {
   return (
     <section id="projects" ref={projectsRef} className="py-16 bg-[var(--portfolio-dark)]">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 fade-in">Featured Projects</h2>
-          <p className="text-gray-400 text-lg fade-in">
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-bold mb-6 fade-in">Featured Projects</h2>
+          <p className="text-xl text-gray-400 fade-in">
             Showcase of my technical expertise and innovation
           </p>
         </div>
@@ -65,23 +65,26 @@ export default function ProjectsSection() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="project-card bg-[var(--portfolio-light)] p-8 rounded-xl fade-in"
+              className="project-card bg-[var(--portfolio-light)] p-8 rounded-2xl fade-in group"
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover rounded-lg mb-6"
-              />
+              <div className="relative overflow-hidden rounded-xl mb-6">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
 
-              <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
-              <p className="text-gray-400 mb-4">{project.subtitle}</p>
-              <p className="text-sm text-gray-400 mb-6">{project.description}</p>
+              <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
+              <p className="text-[var(--portfolio-primary)] mb-4">{project.subtitle}</p>
+              <p className="text-gray-400 mb-6 leading-relaxed">{project.description}</p>
 
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex}
-                    className="bg-[var(--portfolio-primary)]/20 text-[var(--portfolio-primary)] px-3 py-1 rounded-full text-sm"
+                    className="bg-gradient-to-r from-[var(--portfolio-primary)]/20 to-[var(--portfolio-secondary)]/20 text-[var(--portfolio-primary)] px-3 py-1 rounded-full text-sm font-medium"
                   >
                     {tech}
                   </span>
@@ -92,9 +95,9 @@ export default function ProjectsSection() {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[var(--portfolio-primary)] hover:underline font-semibold flex items-center gap-2"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-[var(--portfolio-primary)] to-[var(--portfolio-secondary)] text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
               >
-                <Github size={16} />
+                <Github size={18} />
                 View on GitHub
               </a>
             </div>

@@ -25,47 +25,51 @@ export default function AboutSection() {
   }, []);
 
   return (
-    <section id="about" ref={aboutRef} className="py-16 bg-[var(--portfolio-light)]">
+    <section id="about" ref={aboutRef} className="py-20 bg-[var(--portfolio-light)]">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 fade-in">About Me</h2>
-          <p className="text-gray-400 text-lg max-w-3xl mx-auto fade-in">
-            Eager to contribute to innovative teams where I can merge creativity with clean, maintainable code to solve real-world problems and create seamless digital experiences.
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-bold mb-6 fade-in">About Me</h2>
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto fade-in leading-relaxed">
+            Passionate software engineer creating innovative solutions through clean code and cutting-edge technology
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="fade-in">
-            <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-              alt="Modern web development setup"
-              className="rounded-xl shadow-lg w-full h-auto"
-            />
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="text-center fade-in">
+              <div className="bg-gradient-to-r from-[var(--portfolio-primary)] to-[var(--portfolio-secondary)] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Mail className="text-white" size={24} />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Email</h3>
+              <p className="text-gray-400">dhanushc092@gmail.com</p>
+            </div>
+            <div className="text-center fade-in">
+              <div className="bg-gradient-to-r from-[var(--portfolio-primary)] to-[var(--portfolio-secondary)] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Phone className="text-white" size={24} />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Phone</h3>
+              <p className="text-gray-400">(+91) 6362638287</p>
+            </div>
+            <div className="text-center fade-in">
+              <div className="bg-gradient-to-r from-[var(--portfolio-primary)] to-[var(--portfolio-secondary)] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Github className="text-white" size={24} />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">GitHub</h3>
+              <a
+                href="https://github.com/Dhanushc22"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-[var(--portfolio-primary)] transition-colors"
+              >
+                Dhanushc22
+              </a>
+            </div>
           </div>
 
-          <div className="fade-in">
-            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-            <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <Mail className="text-[var(--portfolio-primary)] text-xl" size={20} />
-                <span>dhanushc092@gmail.com</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <Phone className="text-[var(--portfolio-primary)] text-xl" size={20} />
-                <span>(+91) 6362638287</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <Github className="text-[var(--portfolio-primary)] text-xl" size={20} />
-                <a
-                  href="https://github.com/Dhanushc22"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-[var(--portfolio-primary)] transition-colors"
-                >
-                  Dhanushc22
-                </a>
-              </div>
-            </div>
+          <div className="bg-[var(--portfolio-dark)] p-8 rounded-2xl fade-in">
+            <p className="text-gray-300 text-lg leading-relaxed text-center">
+              I'm eager to contribute to innovative teams where I can merge creativity with clean, maintainable code to solve real-world problems and create seamless digital experiences. With expertise in mobile development, AI/ML, and full-stack solutions, I bring fresh perspectives to every project.
+            </p>
           </div>
         </div>
       </div>
