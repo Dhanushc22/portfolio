@@ -1,4 +1,4 @@
-import { Github, Mail } from "lucide-react";
+import { Github, Mail, FileText } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -19,6 +19,14 @@ export default function Footer() {
             className="text-gray-400 hover:text-[var(--portfolio-primary)] transition-colors"
           >
             <Mail size={24} />
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1eAy7ZhYZSqRz3tL68l_1JvlAl1zOqSK9/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-[var(--portfolio-primary)] transition-colors"
+          >
+            <FileText size={24} />
           </a>
         </div>
       </div>

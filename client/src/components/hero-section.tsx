@@ -55,8 +55,16 @@ export default function HeroSection() {
               View My Projects
             </button>
             <a
-              href="mailto:dhanushc092@gmail.com"
+              href="https://drive.google.com/file/d/1eAy7ZhYZSqRz3tL68l_1JvlAl1zOqSK9/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
               className="border-2 border-[var(--portfolio-primary)] text-[var(--portfolio-primary)] hover:bg-[var(--portfolio-primary)] hover:text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300"
+            >
+              Download Resume
+            </a>
+            <a
+              href="mailto:dhanushc092@gmail.com"
+              className="border-2 border-[var(--portfolio-secondary)] text-[var(--portfolio-secondary)] hover:bg-[var(--portfolio-secondary)] hover:text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300"
             >
               Get In Touch
             </a>

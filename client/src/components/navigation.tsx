@@ -48,6 +48,14 @@ export default function Navigation() {
                 {item.label}
               </button>
             ))}
+            <a
+              href="https://drive.google.com/file/d/1eAy7ZhYZSqRz3tL68l_1JvlAl1zOqSK9/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link text-gray-400 hover:text-white"
+            >
+              Resume
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -79,6 +87,15 @@ export default function Navigation() {
                   {item.label}
                 </button>
               ))}
+              <a
+                href="https://drive.google.com/file/d/1eAy7ZhYZSqRz3tL68l_1JvlAl1zOqSK9/view?usp=drivesdk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white text-left"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Resume
+              </a>
             </div>
           </div>
         )}
