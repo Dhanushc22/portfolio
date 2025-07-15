@@ -49,10 +49,10 @@ export default function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center fade-in">
             <button
-              onClick={() => scrollToSection("projects")}
+              onClick={() => scrollToSection("project-showcase")}
               className="bg-gradient-to-r from-[var(--portfolio-primary)] to-[var(--portfolio-secondary)] text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
-              View My Work
+              View My Projects
             </button>
             <a
               href="mailto:dhanushc092@gmail.com"

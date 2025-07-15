@@ -37,10 +37,8 @@ export default function Navigation() {
               { id: "about", label: "About" },
               { id: "services", label: "Services" },
               { id: "education", label: "Education" },
-              { id: "projects", label: "Projects" },
               { id: "project-showcase", label: "Project Files" },
               { id: "skills", label: "Skills" },
-              { id: "portfolio", label: "Portfolio" },
             ].map((item) => (
               <button
                 key={item.id}
@@ -70,10 +68,8 @@ export default function Navigation() {
                 { id: "about", label: "About" },
                 { id: "services", label: "Services" },
                 { id: "education", label: "Education" },
-                { id: "projects", label: "Projects" },
                 { id: "project-showcase", label: "Project Files" },
                 { id: "skills", label: "Skills" },
-                { id: "portfolio", label: "Portfolio" },
               ].map((item) => (
                 <button
                   key={item.id}
